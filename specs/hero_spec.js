@@ -13,9 +13,9 @@ describe('Hero', function() {
     assert.equal("She-ra", hero.name);
   });
 
-  // it('should have a healthy health of 10', function() {
-
-  // });
+  it('should have a healthy health of 10', function() {
+    assert.equal(10, hero.health);
+  });
 
   // it('should have a favourite food', function() {
 
