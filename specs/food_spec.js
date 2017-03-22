@@ -13,8 +13,8 @@ describe('Food', function() {
     assert.equal('steak', food.name);
   });
 
-  // it('should have a replenishment value of 10', function() {
-
-  // }); 
+  it('should have a replenishment value of 10', function() {
+    assert.equal(10, food.replenishmentValue);
+  }); 
 
 });
