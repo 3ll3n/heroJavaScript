@@ -11,9 +11,11 @@ Hero.prototype = {
   eat: function(food) {
     if(food.name != this.favFood) {
       this.health += food.replenishmentValue;
-    } else {
-    (food.name == this.favFood)
+    } else if (food.name == this.favFood) {
     this.health += food.replenishmentValue * 1.5;
+    } else {
+    //   (food.poisoned)
+    //   this.health -= 10;
     }
   }
 };
