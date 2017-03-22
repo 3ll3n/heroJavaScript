@@ -3,11 +3,17 @@ var assert = require('assert');
 
 describe('Hero', function() {
 
-  it('should have a name', function() {
-    assert.equal();
+  var hero;
+
+  beforeEach(function() {
+    hero = new Hero("She-ra", 10, "steak")
   });
 
-  // it('should have a health', function() {
+  it('should have a name', function() {
+    assert.equal("She-ra", hero.name);
+  });
+
+  // it('should have a healthy health of 10', function() {
 
   // });
 
@@ -16,6 +22,6 @@ describe('Hero', function() {
   // });
 
   // it('should be able to talk', function() {
-    
+
   // }); 
 })
