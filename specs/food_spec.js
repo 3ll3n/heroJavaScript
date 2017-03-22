@@ -17,4 +17,9 @@ describe('Food', function() {
     assert.equal(10, food.replenishmentValue);
   }); 
 
+  it('should be true', function() {
+    food.poison();
+    assert.equal(true, food.poisoned);
+  });
+
 });

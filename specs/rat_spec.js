@@ -17,6 +17,8 @@ describe('Rat', function() {
   });
 
   it('should be able to touch food', function() {
+    food.poison();
+    assert.equal(true, food.poisoned);
     assert.equal('Hordak touched the steak!', rat.touch(food));
   });
 

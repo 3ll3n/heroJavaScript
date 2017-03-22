@@ -4,6 +4,7 @@ var Rat = function(name) {
 
 Rat.prototype = {
   touch: function(food) {
+    food.poison();
     return this.name + " touched the " + food.name + "!";
   }
 };
