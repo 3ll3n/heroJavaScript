@@ -43,10 +43,10 @@ describe('Hero', function() {
     assert.equal(25, hero.health);
   });
 
-  // it('should reduce health if poisoned food is eaten', function() {
-  //   rat.touch(steak);
-  //   hero.eat(steak);
-  //   assert.equal(0, hero.health);
-  // });
+  it('should reduce health if poisoned food is eaten', function() {
+    rat.touch(steak);
+    hero.eat(steak);
+    assert.equal(0, hero.health);
+  });
 
 });
